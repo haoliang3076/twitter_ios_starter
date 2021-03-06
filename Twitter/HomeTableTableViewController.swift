@@ -52,7 +52,7 @@ class HomeTableTableViewController: UITableViewController {
             self.myRefreshControl.endRefreshing()
             
         },failure: {(Error)in
-            print("Could not retreive tweets! oh on!")
+            print("Could not retreive tweets! oh no!")
         })
     }
     
@@ -74,7 +74,7 @@ class HomeTableTableViewController: UITableViewController {
             self.tableView.reloadData()
             
         },failure: {(Error)in
-            print("Could not retreive tweets! oh on!")
+            print("Could not retreive tweets! oh no!")
         })
     }
     
@@ -124,6 +124,8 @@ class HomeTableTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+       // print(tweetArray.count)
+        
         return tweetArray.count
     }
 
