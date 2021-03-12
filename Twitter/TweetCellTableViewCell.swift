@@ -14,9 +14,7 @@ class TweetCellTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var tweetContent: UILabel!
     @IBOutlet weak var userNameLabel: UILabel!
-    
-   
-    @IBOutlet weak var retweetBUtton: UIButton!
+    @IBOutlet weak var retweetButton: UIButton!
     
     
     @IBOutlet weak var favButton: UIButton!
@@ -38,18 +36,19 @@ class TweetCellTableViewCell: UITableViewCell {
 
 }
             
-        
     @IBAction func retweet(_ sender: Any) {
-        TwitterAPICaller.client?.retweet(tweetId: tweetId,success:{self.setRetweeted(true)},failure:{(error) in print("Error is retweeting: \(error)")})
+        TwitterAPICaller.client?.retweet(tweetId: tweetId, success: {self.setRetweeted(true)}, failure:{(error) in print("Error is retweeting: \(error)")
+        })
     }
+    
     
     func setRetweeted(_ isRetweeted:Bool){
         if (isRetweeted) {
-            retweetBUtton.setImage(UIImage(named: "retweet-icon-green"), for: UIControl.State.normal)
-            retweetBUtton.isEnabled = false
+            retweetButton.setImage(UIImage(named: "retweet-icon-green"), for: UIControl.State.normal)
+            retweetButton.isEnabled = false
         } else{
-            retweetBUtton.setImage(UIImage(named: "retweet-icon"), for: UIControl.State.normal)
-            retweetBUtton.isEnabled = true
+            retweetButton.setImage(UIImage(named: "retweet-icon"), for: UIControl.State.normal)
+            retweetButton.isEnabled = true
         }
     }
     

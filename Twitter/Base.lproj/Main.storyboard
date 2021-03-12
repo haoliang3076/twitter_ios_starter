@@ -82,29 +82,37 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="twitter content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMg-Ma-Iso">
-                                                    <rect key="frame" x="81" y="30" width="323" height="82"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="twitter content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMg-Ma-Iso">
+                                                    <rect key="frame" x="81" y="30" width="323" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRS-Wy-ekj" userLabel="retweetButton">
-                                                    <rect key="frame" x="324" y="110" width="30" height="30"/>
+                                                    <rect key="frame" x="332" y="110" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="QB3-Mc-3c3"/>
                                                         <constraint firstAttribute="width" constant="30" id="p40-qe-1aX"/>
                                                     </constraints>
                                                     <state key="normal" image="retweet-icon"/>
                                                     <connections>
-                                                        <action selector="retweet:" destination="ywi-DC-bfr" eventType="touchUpInside" id="vSF-6j-t1y"/>
-                                                        <action selector="retweetButton:" destination="ywi-DC-bfr" eventType="touchUpInside" id="7xY-pE-Xe1"/>
+                                                        <action selector="retweet:" destination="ywi-DC-bfr" eventType="touchUpInside" id="6cR-Ga-c6e"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cip-T9-lWS" userLabel="favButton">
-                                                    <rect key="frame" x="362" y="110" width="36" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cip-T9-lWS" userLabel="favButton">
+                                                    <rect key="frame" x="372" y="110" width="30" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="10" id="gan-EJ-61C"/>
-                                                        <constraint firstAttribute="width" constant="30" id="pbl-VV-YBL"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Plx-Iv-wL8"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="V0H-fB-EFP"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="Xid-Wg-kBR"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="YZ5-ub-TD6"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="ftn-Vz-CLJ"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="giU-lC-eYQ"/>
+                                                        <constraint firstAttribute="height" constant="30" id="hzz-5b-zGe"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="rSH-qG-bSE"/>
+                                                        <constraint firstAttribute="width" constant="30" id="u6U-ov-PZb"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="36" id="vW7-zh-gdb"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="zOd-DS-eMd"/>
                                                     </constraints>
                                                     <state key="normal" image="favor-icon"/>
                                                     <connections>
@@ -119,21 +127,21 @@
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="AlB-NW-BxC"/>
                                                 <constraint firstItem="tMg-Ma-Iso" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="DnU-yG-I7X"/>
                                                 <constraint firstItem="tMg-Ma-Iso" firstAttribute="top" secondItem="2Hg-Mt-8Ra" secondAttribute="bottom" constant="4" id="HcW-6N-EAF"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="cip-T9-lWS" secondAttribute="trailing" constant="10" id="M3Q-Xj-RyH"/>
+                                                <constraint firstAttribute="bottom" secondItem="cip-T9-lWS" secondAttribute="bottom" constant="10" id="O6q-OO-oiR"/>
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="top" secondItem="pKY-iZ-XgY" secondAttribute="topMargin" id="QU0-Na-JLM"/>
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="Txd-0y-b0L"/>
                                                 <constraint firstItem="ST1-iX-7mP" firstAttribute="leading" secondItem="pKY-iZ-XgY" secondAttribute="leadingMargin" id="WvO-t4-zRN"/>
+                                                <constraint firstAttribute="trailing" secondItem="cip-T9-lWS" secondAttribute="trailing" constant="10" id="YXY-rk-gx5"/>
                                                 <constraint firstItem="cip-T9-lWS" firstAttribute="leading" secondItem="ZRS-Wy-ekj" secondAttribute="trailing" constant="10" id="ekc-5F-6lz"/>
                                                 <constraint firstAttribute="bottom" secondItem="ZRS-Wy-ekj" secondAttribute="bottom" constant="10" id="gRB-zr-p8U"/>
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="jol-Eb-e6v"/>
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="l3a-kz-AmW"/>
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="pel-ub-bgW"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="cip-T9-lWS" secondAttribute="bottom" constant="10" id="qiY-sr-YR3"/>
                                                 <constraint firstItem="ST1-iX-7mP" firstAttribute="top" secondItem="pKY-iZ-XgY" secondAttribute="topMargin" id="rRM-5M-vHm"/>
                                                 <constraint firstItem="2Hg-Mt-8Ra" firstAttribute="leading" secondItem="ST1-iX-7mP" secondAttribute="trailing" constant="8" id="rre-4Q-KVZ"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Hg-Mt-8Ra" secondAttribute="trailing" constant="20" symbolic="YES" id="uCp-Wp-1Lm"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="tMg-Ma-Iso" secondAttribute="trailing" id="yZk-nl-vEJ"/>
-                                                <constraint firstItem="cip-T9-lWS" firstAttribute="top" secondItem="tMg-Ma-Iso" secondAttribute="bottom" constant="10" id="zho-6u-Yah"/>
+                                                <constraint firstItem="cip-T9-lWS" firstAttribute="top" secondItem="tMg-Ma-Iso" secondAttribute="bottom" constant="8" id="zho-6u-Yah"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -147,7 +155,7 @@
                                 <connections>
                                     <outlet property="favButton" destination="cip-T9-lWS" id="H9v-SU-rYD"/>
                                     <outlet property="profileImageView" destination="ST1-iX-7mP" id="U37-DU-TvK"/>
-                                    <outlet property="retweetBUtton" destination="ZRS-Wy-ekj" id="HYe-rQ-7JT"/>
+                                    <outlet property="retweetButton" destination="ZRS-Wy-ekj" id="wVx-kS-81j"/>
                                     <outlet property="tweetContent" destination="tMg-Ma-Iso" id="zkR-I9-oHH"/>
                                     <outlet property="userNameLabel" destination="2Hg-Mt-8Ra" id="LFP-yD-b9G"/>
                                 </connections>
